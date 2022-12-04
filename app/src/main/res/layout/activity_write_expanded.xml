@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WriteActivityExpanded">
+
+    <FrameLayout
+        android:id="@+id/backframe"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="200dp"
+            app:cardElevation="0dp">
+
+            <FrameLayout
+                android:id="@+id/backbutton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="1.0"
+                    android:background="@drawable/bg_gradient" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_arrow"
+                    android:backgroundTint="#fff"
+                    android:rotation="180" />
+
+
+            </FrameLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="90dp"
+            android:fontFamily="@font/montbold"
+            android:text=""
+            android:textColor="#3B8FF0"
+            android:textSize="20sp" />
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/tagtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backframe"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montbold"
+        android:text="Write to Tag"
+        android:textColor="#232324"
+        android:textSize="25sp" />
+
+
+    <TextView
+        android:id="@+id/tagsubtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tagtext"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/montregular"
+        android:lineSpacingExtra="5dp"
+        android:layout_marginEnd="20dp"
+        android:text="Enter any text in the messagebox provided. Examples of texts can be URLs, Address, Phone number, etc."
+        android:textSize="12sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/messagecard"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/tagsubtext"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_message"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:paddingStart="20dp"
+            android:gravity="start"
+            android:paddingTop="20dp"
+            android:backgroundTint="#C7C7C7"
+            android:background="@drawable/textbackground"
+            android:fontFamily="@font/montregular"
+            android:hint="Your message here..."
+            android:textSize="15sp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="0dp"
+        android:layout_below="@+id/messagecard"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/white"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_write"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/montsemibold"
+            android:padding="50px"
+            android:text="Write to Tag"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@drawable/mainback"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/maintext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/montbold"
+        android:gravity="center"
+        android:text="Welcome to NFC Tools"
+        android:textColor="#FFF"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/subtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/maintext"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:fontFamily="@font/montbold"
+        android:text="Here are a few things you can do with your Card"
+        android:textColor="#FFF"
+        android:textSize="12sp" />
+
+
+    <LinearLayout
+        android:layout_width="1900px"
+        android:layout_height="1300px"
+        android:layout_below="@id/subtext"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/readbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_readbutton" />
+
+
+            <ImageView
+                android:id="@+id/settingsbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ic_settingsbutton" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/writebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/ic_writebutton" />
+
+
+            <ImageView
+                android:id="@+id/savedtagsbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_savedtagsbutton" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
